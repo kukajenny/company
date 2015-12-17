@@ -1,0 +1,25 @@
+运用数据库mysql
+
+需在电脑中导入数据库company
+打开cmd进入mysql
+
+执行语句：
+create database company;      //创建company数据库;
+ues company;                //使用数据库company；
+source E:\java文件\company/company.sql;   //导入数据库：注意路径和最后的反斜杠
+
+
+jar包里使用的数据库名为company，连接mysql的用户名为“root”，密码为“”（空）
+所以当在不同电脑使用时满足不了以上条件会运行不了
+注意jar包需同lib文件放在同一目录才可运行
+
+所以想在自己电脑运行该系统，需在源码中Test.java修改database，mysqlname，mysqlpassword等信息即可在该电脑运行。
+
+
+初始用户名为：abc
+密码为：123456
+
+登录后可在管理处管理用户
+
+发现了一个问题：当修改商品时当为汉字时是不能完成修改的，而当是数字、字母时能修改。
+报错内容：refreshRow() called on row that has been deleted or had primary key changed.

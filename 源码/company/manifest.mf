@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: company.Test
+Class-Path: lib/jcommon-1.0.23.jar lib/jfreechart-1.0.19.jar lib/mysql-connector-java-5.1.36-bin.jar
+
